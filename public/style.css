@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.firstContainer {
+    background-color: #eeeeee;
+    border-radius: .5rem;
+}
+
+.imgTable {
+    height: 3rem;
+}
+
+.hide {
+    display: none;
+}
+
+.chatContainer {
+    background-color: #eeeeee;
+    border-radius: .5rem;
+    border: none;
+    border-radius: 15px;
+    height: 500px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.chatHeader {
+    border-radius: 15px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 12px;
+    height: 46px;
+    flex: 1;
+}
+
+.chatConfig {
+    font-size: 12px;
+    height: 32px;
+    flex: 1;
+}
+
+.chatMessages {
+    flex: 12;
+    overflow-y: auto;
+}
+
+.chatFooter {
+    flex: 1;
+    display: flex;
+}
+
+.message {
+    max-width: 50%;
+}
+
+.messageDate {
+    font-size: 9px;
+    padding-top: 4px;
+}
+
+.userMessage {
+    font-weight: bold;
+}

@@ -1,0 +1,52 @@
+{
+  "objects": [
+    {
+      "title": "Escuadra",
+      "price": 123.45,
+      "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+      "id": 1
+    },
+    {
+      "title": "Calculadora",
+      "price": 234.56,
+      "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+      "id": 2
+    },
+    {
+      "title": "Globo Terráqueo",
+      "price": 345.67,
+      "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+      "id": 3
+    },
+    {
+      "title": "Tijeras",
+      "price": 21.34,
+      "thumbnail": "https://cdn0.iconfinder.com/data/icons/graphic-design-tools-5/128/_scissor-256.png",
+      "id": 4
+    },
+    {
+      "title": "Lapiz",
+      "price": 487.32,
+      "thumbnail": "https://cdn2.iconfinder.com/data/icons/cartoonist-1/64/pencil-draw-writing_tool-education-256.png",
+      "id": 5
+    },
+    {
+      "title": "Mochila",
+      "price": 897.56,
+      "thumbnail": "https://cdn4.iconfinder.com/data/icons/education-738/64/backpack-bag-school-university-education-256.png",
+      "id": 6
+    },
+    {
+      "title": "Rubik",
+      "price": 555.56,
+      "thumbnail": "https://cdn4.iconfinder.com/data/icons/toys-flat-3/64/Rubik-freak-gaming-education-cube-256.png",
+      "id": 7
+    },
+    {
+      "title": "Calculadora",
+      "price": 602.33,
+      "thumbnail": "https://cdn2.iconfinder.com/data/icons/cute-school-2/512/school_education_cute-08-256.png",
+      "id": 8
+    }
+  ]
+}

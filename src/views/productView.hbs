@@ -1,0 +1,82 @@
+<script type="text/x-handlebars-template" id="template"></script>
+<div class="w-50 p-5 my-4 firstContainer">
+    <h3 class="mb-4 text-center">Ingrese su producto</h3>
+    <form id="formElement">
+        <div class="d-grid col-10 mb-3 mx-auto">
+            <label for="inputTitle" class="form-label fw-bold">Nombre:</label>
+            <input type="text" class="form-control" id="inputTitle" aria-describedby="titleHelp" autofocus>
+        </div>
+        <div class="d-grid col-10 mb-3 mx-auto">
+            <label for="inputPrice" class="form-label fw-bold">Precio:</label>
+            <input type="number" class="form-control" id="inputPrice">
+        </div>
+        <div class="d-grid col-10 mb-3 mx-auto">
+            <label for="inputThumbnail" class="form-label fw-bold">URL:</label>
+            <input type="text" class="form-control" id="inputThumbnail">
+        </div>
+        <div class="d-grid col-10 mb-3 mx-auto">
+            <button type="button" id="btnAddProduct" class="btn btn-success">Enviar</button>
+        </div>
+    </form>
+    <div id="successAlert" class="alert alert-success alert-dismissible fade show hide" role="alert">
+        <strong>Exito!</strong> Su producto <span id="productName" class="fw-bold"></span> fue guardado.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+</div>
+<div class="w-50 p-5 firstContainer">
+    <h3 class="mb-4 text-center">Listado</h3>
+    <table class="table table-dark table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Imagen</th>
+            </tr>
+        </thead>
+        <tbody id="productContainer">
+            {{!-- Lista de productos --}}
+        </tbody>
+    </table>
+</div>
+<div class="w-50 my-4 chatContainer">
+    <div class="chatHeader bg-success">
+        <div class="d-flex flex-row justify-content-between p-3 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chat-text-fill" viewBox="0 0 16 16">
+                <path
+                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+            </svg>
+            <span class="pb-3 fw-bold">CENTRAL DE MENSAJES</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots"
+                viewBox="0 0 16 16">
+                <path
+                    d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+            </svg>
+        </div>
+    </div>
+    <div class="bg-success p-2 text-white bg-opacity-75 chatConfig input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Usuario:</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm" id="inputUsername">
+    </div>
+    <div class="chatMessages">
+        <div class="d-flex flex-column p-3" id="messageContainer">
+        </div>
+    </div>
+    <div class="input-group input-group-sm px-3 pb-3 chatFooter">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Escribe tu mensaje..."
+                aria-label="Input Username" aria-describedby="btnSendMessage" id="inputMessage">
+            <button class="btn btn-success" type="button" id="btnSendMessage">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="/ui.js" type="module"></script>
+<script src="/index.js" type="module"></script>

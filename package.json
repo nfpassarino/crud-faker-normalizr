@@ -1,0 +1,32 @@
+{
+  "name": "crud-faker-normalizr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon --watch src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfpassarino/express-challenge.git"
+  },
+  "keywords": [],
+  "author": "Nicolas Passarino <nfpassarino@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfpassarino/express-challenge/issues"
+  },
+  "homepage": "https://github.com/nfpassarino/express-challenge#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.5.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "handlebars": "^4.7.7",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.13",
+    "socket.io": "^4.2.0",
+    "faker": "^5.5.3",
+    "normalizr": "^3.6.1"
+  }
+}
